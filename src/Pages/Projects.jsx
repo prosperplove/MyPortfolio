@@ -1,5 +1,5 @@
 import React from 'react'
-import site from "../Image/site.jpg"
+import site1 from "../Image/site1.jpg"
 import site2 from "../Image/site2.jpg"
 import site3 from "../Image/site3.jpg"
 const Projects = () => {
@@ -14,7 +14,7 @@ const Projects = () => {
       
       {/* Project 1 */}
       <div className="col-12 col-md-6 col-lg-4">
-        <div className="card bg-dark text-light  shadow-lg border-0">x
+        <div className="card bg-dark text-light  shadow-lg border-0">
           <img src={site3} className="card-img-top" alt="Weather App" />
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Crypto Testnet Promo Website </h5>
@@ -38,7 +38,7 @@ const Projects = () => {
       {/* Project 2 */}
       <div className="col-12 col-md-6 col-lg-4">
         <div className="card bg-dark text-light  shadow-lg border-0">
-          <img src={site} className="card-img-top" alt="Todo App" />
+          <img src={site1} className="card-img-top" alt="Todo App" />
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Marketing E-commerce Website</h5>
             <p className="card-text" style={{ color: "#cacad6" }}>
