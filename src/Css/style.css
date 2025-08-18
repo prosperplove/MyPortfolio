@@ -1,0 +1,368 @@
+body{
+  background-color: #1e1e20;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ece6e6;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+}
+/* Hide the checkbox input */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 5vh;
+  height: 25px;
+  justify-content: space-between;
+ 
+}
+
+.hamburger div {
+  height: 3px;
+  background-color: white;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+/* Navigation links styles */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide menu by default */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    display: none;
+    border-radius: 4px;
+    color: white;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  /* Optional: animate hamburger to 'X' when active */
+  #menu-toggle:checked + .hamburger div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #menu-toggle:checked + .hamburger div:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .hamburger div:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+#body{
+    justify-items: center;
+    display: flex;
+    color: white;
+    width: 100%;
+ max-width: 100%;
+ padding: 1rem;
+ box-sizing: border-box;
+   margin-top: 10vh;
+}
+#body img{
+   width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 50px;
+   
+ 
+}
+
+ 
+#body img :hover{
+    transform:scale(1.1);
+    transition: 10s;
+}
+
+.profile{
+   font-size: 1.5rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.profile ol{
+ list-style: none;
+ --height: 3.8rem;
+ height: var(--height);
+ line-height: var(--height);
+ overflow: hidden;
+}
+.profile ol li span{
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right,rgb(170, 42, 170), cyan);
+  -webkit-background-clip: text;    
+  background-clip: none;
+  white-space: nowrap;
+}
+.profile ol li{
+ animation:slide-up 12s infinite;
+ 
+}
+@keyframes slide-up {
+  0%, 10%{
+    transform: translateY(0%);
+  }
+  15%, 25%{
+    transform: translateY(-100%);
+  }
+  30%, 40%{
+    transform: translateY(-400%);
+  }
+  45%, 55%{
+    transform: translateY(-300%);
+  }
+  60%, 70%{
+    transform: translateY(-400%);
+  }
+ 
+  
+}
+.title{
+  font-size: xx-large;
+  position: relative;
+  font-weight: bolder;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+.title:before{
+content: '';
+
+}
+.title span{
+  color: aqua;
+ 
+ 
+ 
+}
+
+.contact{
+  background: linear-gradient(to right,#040124,#26376d);
+   
+     background-position: center; /* Keeps the image centered */
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  padding: 1rem; /* Optional padding for small screens */
+  box-sizing: border-box;
+  overflow: hidden;
+    position: relative;
+  width: 100%; /* Full width */
+  height: 50vh;
+ max-width: 100%;
+ margin: 0 auto;
+ color: white;
+}
+.contact h1 {
+    color:rgb(145, 123, 4);
+    margin-right: 5vh;
+    
+}
+.contact2{
+    background-color: black;
+    height: auto;
+    color: white;
+   justify-content: center;
+   width: 100%;
+ max-width: 100%;
+ margin: 0 auto;
+ padding: 1rem;
+ box-sizing: border-box;
+}
+.contact2 a{
+    text-decoration: none;
+    margin-left: 55px;
+   color: white;
+}
+
+  .form{
+   justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+   }
+  form .input-box{
+    margin-top: 20px;
+  }
+  .input-box .field{
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    font-size: 1.3rem;
+    border: 2px solid;
+  }
+  form button{
+    margin-top: 2vh;
+    transition: .5s;
+   
+  }
+  
+   form button:hover{
+    background:black;
+   }
+  
+   .section-2{
+     width: 100%;
+ max-width: 100%;
+
+ padding: 1rem;
+ box-sizing: border-box;
+    text-align: center;
+    
+   }
+   .section-2 h1{
+    color: white;
+    font-size: 1.5rem;
+   }
+   .section-2 h1 span{
+    color: aqua;
+   }
+   .card {
+
+ margin: 50px;
+   }
+   .container{
+    display: flex;
+    justify-content: center;
+   
+   }
+   
+  
+  
+ 
+   .cards h5{
+  color: white;
+   }
+   .section-2 .cards :hover{
+     transform:scale(1.1);
+    transition: 5s;
+   }
+ 
+
+/* TYPING EFFECTS */
+    #about {
+    width: 100%;
+ max-width: 100%;
+ margin: 0 auto;
+ padding: 1rem;
+ box-sizing: border-box;
+  }
+
+ .projects{
+   width: 100%;
+ max-width: 100%;
+ margin: 0 auto;
+ padding: 1rem;
+ box-sizing: border-box;
+ }
+   .card .btn {
+  margin-bottom: 8px;
+}
+#projects img{
+width: 100%;
+height: 50%;
+}
+#circle{
+  width: 15vw;
+  height: 15vw;
+  max-width: 40px;
+  max-height: 40px;
+  min-height: 20px;
+  min-width: 20px;
+  background-color: aqua;
+  font-size: 1rem;
+  border-radius: 50%;
+text-align: center;
+ margin: 0 auto;
+ padding: 1rem;
+ box-sizing: border-box;
+}
+.my-process{
+   width: 100%;
+ max-width: 100%;
+ margin: 0 auto;
+ padding: 1rem;
+ box-sizing: border-box;
+}
+#process h1{
+font-size: 1.5rem;
+}
+#process p{
+  color: #cacad6;
+}
+.certificate{
+   width: 100%;
+ max-width: 100%;
+ margin: 0 auto;
+ padding: 1rem;
+ box-sizing: border-box;
+}
+ .footer{
+background-color:rgb(241, 239, 239);
+text-align: center;
+flex-direction: column;
+ padding: 1.5rem 2rem;
+ height: auto;
+ box-sizing: border-box;
+}    
+
+
+  .footer h1{
+    font-size:xx-large;
+    font-weight: bold;
+  }
+  .footer p{
+font-size:medium;
+  }
