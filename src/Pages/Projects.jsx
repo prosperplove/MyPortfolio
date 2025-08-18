@@ -14,7 +14,7 @@ const Projects = () => {
       
       {/* Project 1 */}
       <div className="col-12 col-md-6 col-lg-4">
-        <div className="card bg-dark text-light  shadow-lg border-0">
+        <div className="card bg-dark text-light  shadow-lg border-0">x
           <img src={site3} className="card-img-top" alt="Weather App" />
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Crypto Testnet Promo Website </h5>
