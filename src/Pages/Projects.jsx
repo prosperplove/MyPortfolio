@@ -19,7 +19,7 @@ const Projects = () => {
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Crypto Testnet Promo Website </h5>
             <p className="card-text" style={{ color: "#cacad6" }}>
-             A Simple Crypto Testnet Promo Website,used CoinGecko Api to fetch live crypto market information. <br />
+             A Simple Crypto Testnet Promo Website,used REST API from CoinGecko to fetch live crypto market information. <br />
              A whitelist form to submit your wallet and email
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>

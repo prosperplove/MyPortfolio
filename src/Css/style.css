@@ -13,7 +13,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ece6e6;
+  background-color: #464444;
   position: fixed;
   width: 100%;
   top: 0;
@@ -50,7 +50,7 @@ html {
 }
 
 .nav-links li a {
-  color: black;
+  color:white;
   text-decoration: none;
   font-size: 18px;
   padding: 8px 12px;

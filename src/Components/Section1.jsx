@@ -87,7 +87,7 @@ const Section1 = () => {
        <SiCss3 size={100} color='#1572B6'/>
        <h5>CSS</h5>
        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"75%" }}>75%</div>
+  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
 </div>
 
 </div>
@@ -126,7 +126,7 @@ const Section1 = () => {
        <SiReact size={100} color='#61DAFB'/>
       <h5>REACT.JS</h5>
      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"75%" }}>75%</div>
+  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
 </div>
 </div>
 </div>
