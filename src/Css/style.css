@@ -164,6 +164,15 @@ html {
   60%, 70%{
     transform: translateY(-400%);
   }
+    75%, 80%{
+    transform: translateY(-600%);
+  }
+    85%, 90%{
+    transform: translateY(-800%);
+  }
+    95%, 100%{
+    transform: translateY(-100%);
+  }
  
   
 }

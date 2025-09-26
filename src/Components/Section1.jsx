@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import { Element } from 'react-scroll'
 import { FaWhatsapp, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, FaCertificate,} from "react-icons/fa";
-import { SiHtml5, SiCss3, SiJavascript,SiReact, SiBootstrap } from 'react-icons/si'
+import { SiHtml5, SiCss3, SiJavascript,SiReact, SiBootstrap, SiTailwindcss, SiNextdotjs, SiPostman } from 'react-icons/si'
 import { RiFileGifFill } from 'react-icons/ri'
 import Animation from "../Pages/Animation"
 import Projects from '../Pages/Projects'
@@ -50,6 +50,9 @@ const Section1 = () => {
                 <li><span>JAVASCRIPT</span></li>
                 <li><span>REACT.JS</span></li>
                 <li><span>BOOTSTRAP</span></li>
+                <li><span>TAILWIND CSS</span></li>
+                <li><span>NEXT.JS</span></li>
+                <li><span>POSTMAN</span></li>
               </ol>
             I thrives at the intersection of design and functionality-ensuring every pixel serves a purpose.</p>
             </div>
@@ -113,6 +116,15 @@ const Section1 = () => {
     </div>
      <div class="col-6 col-md-4 col-lg-4">
      <div class="cards">
+      <SiTailwindcss size={100} color='#7952B8'/>
+      <h5>Tailwind CSS</h5>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
+</div>
+ </div>
+    </div>
+     <div class="col-6 col-md-4 col-lg-4">
+     <div class="cards">
        <RiFileGifFill size={100} color='#61DAFB'/>
       <h5>GIT</h5>
       <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
@@ -120,7 +132,24 @@ const Section1 = () => {
 </div>
  </div>
     </div>
-    
+     <div class="col-6 col-md-4 col-lg-4">
+     <div class="cards">
+      <SiNextdotjs size={100} color='#7952B8'/>
+     <h5>NEXT.JS</h5>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
+</div>
+ </div>
+    </div>
+     <div class="col-6 col-md-4 col-lg-4">
+     <div class="cards">
+      <SiPostman size={100} color='#7952B8'/>
+      <h5>POSTMAN</h5>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
+</div>
+ </div>
+    </div>
       <div class="col-6 col-md-4 col-lg-4 ">
  <div class="cards">
        <SiReact size={100} color='#61DAFB'/>
