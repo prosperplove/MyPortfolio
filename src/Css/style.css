@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    
 }
 html {
   scroll-behavior: smooth;
@@ -115,9 +116,7 @@ html {
   object-fit: cover;
   display: block;
   border-radius: 50px;
-   
- 
-}
+   }
 
  
 #body img :hover{
@@ -264,11 +263,11 @@ content: '';
   
    .section-2{
      width: 100%;
- max-width: 100%;
-
- padding: 1rem;
- box-sizing: border-box;
-    text-align: center;
+     max-width: 100%;
+     padding: 1rem;
+     box-sizing: border-box;
+     text-align: center;
+     
     
    }
    .section-2 h1{
@@ -315,6 +314,7 @@ content: '';
  margin: 0 auto;
  padding: 1rem;
  box-sizing: border-box;
+ 
  }
    .card .btn {
   margin-bottom: 8px;

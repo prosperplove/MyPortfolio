@@ -1,7 +1,8 @@
 import React from 'react'
-import site1 from "../Image/site1.jpg"
-import site2 from "../Image/site2.jpg"
-import site3 from "../Image/site3.jpg"
+import site1 from "../Image/site1.png"
+import site2 from "../Image/site2.png"
+import site3 from "../Image/site3.png"
+import site4 from "../Image/devcode.png"
 const Projects = () => {
   return (
     <div>
@@ -13,7 +14,7 @@ const Projects = () => {
     <div className="row g-4">
       
       {/* Project 1 */}
-      <div className="col-12 col-md-6 col-lg-4">
+      <div className="col-12 col-md-6 col-lg-6">
         <div className="card bg-dark text-light  shadow-lg border-0">
           <img src={site3} className="card-img-top" alt="Weather App" />
           <div className="card-body">
@@ -23,7 +24,7 @@ const Projects = () => {
              A whitelist form to submit your wallet and email
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
-              <strong>Languages Used:</strong> HTML, CSS, JavaScript, React, Bootstrap
+              <strong>Languages Used:</strong> JavaScript, React, Bootstrap
             </p>
             <a href="https://matrixcoin.netlify.app" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
               View Project
@@ -35,17 +36,40 @@ const Projects = () => {
         </div>
       </div>
 
+      
       {/* Project 2 */}
-      <div className="col-12 col-md-6 col-lg-4">
+      <div className="col-12 col-md-6 col-lg-6">
+        <div className="card bg-dark text-light  shadow-lg border-0">
+          <img src={site4} className="card-img-top" alt="Todo App" />
+          <div className="card-body">
+            <h5 className="card-title" style={{ color: "aqua" }}>Business portfolio website</h5>
+            <p className="card-text" style={{ color: "#cacad6" }}>
+             Business portfolio website for a tech startup,<br />Showcasing services renders by the company, their previous jobs. testimonies from clients and a contact page
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
+              <strong>Languages Used:</strong> Javascript, React, Tailwind
+            </p>
+            <a href="https://devcode-hub.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
+              View Project
+            </a>
+            <a href="https://github.com/prosperplove" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Project 3 */}
+      <div className="col-12 col-md-6 col-lg-6">
         <div className="card bg-dark text-light  shadow-lg border-0">
           <img src={site1} className="card-img-top" alt="Todo App" />
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Marketing E-commerce Website</h5>
             <p className="card-text" style={{ color: "#cacad6" }}>
-             Clothes & Sneakers E-commerce Website, responsive to all screen sizes,<br />Option to add to cart and a sellout payment page for total items bought, used React Context for storage management
+             Clothes & Sneakers E-commerce Website, responsive to all screen sizes, Option to add to cart and a sellout payment page for total items bought.
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
-              <strong>Languages Used:</strong> HTML, CSS, JavaScript, React
+              <strong>Languages Used:</strong>JavaScript, React, Bootstrap
             </p>
             <a href="https://dastellas.netlify.app" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
               View Project
@@ -57,8 +81,8 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Project 3 */}
-      <div className="col-12 col-md-6 col-lg-4">
+      {/* Project 4 */}
+      <div className="col-12 col-md-6 col-lg-6">
         <div className="card bg-dark text-light  shadow-lg border-0">
           <img src={site2} className="card-img-top" alt="Portfolio Website" />
           <div className="card-body">
@@ -67,7 +91,7 @@ const Projects = () => {
             A little Movie community, where talents connects together, An interactive event registration form, where you receive an instant email regarding your registration.
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
-              <strong>Languages Used:</strong> HTML, CSS, JavaScript, React, Bootstrap
+              <strong>Languages Used:</strong>JavaScript, React, Bootstrap
             </p>
             <a href="https://filmmaax.netlify.app" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
               View Project
