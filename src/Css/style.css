@@ -2,8 +2,10 @@ body{
   background-color: #1e1e20;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    
+   
+}
+html, body {
+  overflow-x: hidden !important;
 }
 html {
   scroll-behavior: smooth;
@@ -296,8 +298,9 @@ content: '';
    }
    .card {
 
- margin: 50px;
+ margin: 20px auto;
    }
+  
    .container{
     display: flex;
     justify-content: center;
