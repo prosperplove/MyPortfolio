@@ -6,8 +6,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import { Element } from 'react-scroll'
-import { FaWhatsapp, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, FaCertificate,} from "react-icons/fa";
-import { SiHtml5, SiCss3, SiJavascript,SiReact, SiBootstrap, SiTailwindcss, SiNextdotjs, SiPostman } from 'react-icons/si'
+import { FaWhatsapp, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, FaCertificate,FaNpm} from "react-icons/fa";
+import { SiHtml5, SiCss3, SiJavascript,SiReact, SiBootstrap, SiTailwindcss, SiNextdotjs, SiPostman, SiTypescript, SiVite} from 'react-icons/si'
 import { RiFileGifFill } from 'react-icons/ri'
 import Animation from "../Pages/Animation"
 import Projects from '../Pages/Projects'
@@ -35,13 +35,12 @@ const Section1 = () => {
    
         <div className="container-fluid" id='body'>
                 <div className='row'>
-                  <div className='col-12 col-md-6 col-lg-6'>
-            <img src={prosper} alt="" />
-            </div>
+      
             <div className='col-12 col-md-6 col-lg-6'>
-            <div className='profile' style={{ margin:"65px" }}>
+            <div className='profile' >
             <h1 >Hi i'm <span style={{ color:"aqua" }}>Chukwujekwu Prosper</span></h1>
-            <p style={{  color: "#cacad6" }}> A Certified  <span className='title'>Front<span>end</span> Web<span>Developer</span> </span>,<br />
+            <p style={{  color: "#cacad6" }}> A Certified  <span className='title'>Front<span>end</span> 
+             <span> Deve<span style={{ color:"white" }}>lop</span>er</span> </span>,<br />
             Passionate about building visually stunning, user-friendly digital experience
              with a knack for turning ideas into responsive, performant websites.
               with expertise in <ol>
@@ -68,146 +67,152 @@ const Section1 = () => {
               <a href="https://wa.me/08144590363" style={{ padding:"10px"}}><FaWhatsapp size={30}/></a>
            </div>
               </div>
-              
+                  <div className='col-12 col-md-6 col-lg-6'>
+            <img src={prosper} alt="" />
+             <p className='text-center' style={{ color:"gray" }}>Meet Chukwujekwu Prosper</p>
+            </div>
               </div>
             </div>
-
+              <div id='about' style={{ color:"white", textAlign:"center" }}>
+            <h1 data-aos="fade-up" style={{ color:"aqua", fontSize:"2rem", fontFamily:"cursive" }} >About Me</h1>
+           <p className='container' data-aos="fade-up"  style={{ fontSize:"1.2rem",  color: "#cacad6" }}>i'm a frontend developer with a passion for crafting clean, responsive, and accessible web interfaces. i specialize in building seamless user experiences using modern tools like React.js, next.js, Typescript and Tailwind
+         With a strong eye for design and details, i bridge the gap between design and code, turning concepts into real,functional products. i enjoy learning new technologies, solving UI challenges, and contributing to projects that make the web better. When i'm not coding, i'm probably exploring design trends, tweaking side projects, or helping others level up in tech.</p>
+         
+   </div>
       <section className='section-2' id='skills'>
-        <h1>My Tech <span>Stack</span></h1>
+        <h1 className='fw-bold'>My Tech <span>Stack</span></h1>
          <div className="container" data-aos="fade-up-right">
           <div className='row'>
-           <div class="col-6 col-md-4 col-lg-4">
+           <div class="col-4 col-md-4 col-lg-3">
           <div class="cards">
-              <SiHtml5 size={100} color='#E34F26'/>
-       <h5>HTML</h5>
-       <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"95%" }}>95%</div>
+              <SiHtml5 size={50} color='#E34F26'/>
+       <p>HTML</p>
 </div>
 </div>
-</div>
-  <div class="col-6 col-md-4 col-lg-4">
+  <div class="col-4 col-md-4 col-lg-3">
      <div class="cards">
-       <SiCss3 size={100} color='#1572B6'/>
-       <h5>CSS</h5>
-       <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+       <SiCss3 size={50} color='#1572B6'/>
+       <p>CSS</p>
+      
 
 </div>
 </div>
-  <div class="col-6 col-md-4 col-lg-4">
+  <div class="col-4 col-md-4 col-lg-3">
    <div class="cards">
-       <SiJavascript size={100} color='#F7DF1E'/>
-   <h5>JAVASCRIPT</h5>
-   <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"70%" }}>70%</div>
-</div>
+       <SiJavascript size={50} color='#F7DF1E'/>
+   <p>JAVASCRIPT</p>
 
 </div>
 </div>
-   <div class="col-6 col-md-4 col-lg-4">
-     <div class="cards">
-      <SiBootstrap size={100} color='#7952B8'/>
-      <h5>BOOTSTRAP</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
+
+ <div class="col-4 col-md-4 col-lg-3">
+   <div class="cards">
+       <SiTypescript size={50} color='blue'/>
+   <p>TYPESCRIPT</p>
+
 </div>
+</div>
+
+   <div class="col-4 col-md-4 col-lg-3">
+     <div class="cards">
+      <SiBootstrap size={50} color='#7952B8'/>
+      <p>BOOTSTRAP</p>
+     
  </div>
     </div>
-     <div class="col-6 col-md-4 col-lg-4">
+     <div class="col-4 col-md-4 col-lg-3">
      <div class="cards">
-      <SiTailwindcss size={100} color='#7952B8'/>
-      <h5>Tailwind CSS</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+      <SiTailwindcss size={50} color='#7952B8'/>
+      <p>Tailwind CSS</p>
+     
  </div>
     </div>
-     <div class="col-6 col-md-4 col-lg-4">
+     <div class="col-4 col-md-4 col-lg-3">
      <div class="cards">
-       <RiFileGifFill size={100} color='#61DAFB'/>
-      <h5>GIT</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+       <RiFileGifFill size={50} color='#61DAFB'/>
+      <p>GIT</p>
+     
  </div>
     </div>
-     <div class="col-6 col-md-4 col-lg-4">
+     <div class="col-4 col-md-4 col-lg-3">
      <div class="cards">
-      <SiNextdotjs size={100} color='#7952B8'/>
-     <h5>NEXT.JS</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+      <SiNextdotjs size={50} color='#7952B8'/>
+     <p>NEXT.JS</p>
+      
  </div>
     </div>
-     <div class="col-6 col-md-4 col-lg-4">
+     <div class="col-4 col-md-4 col-lg-3">
      <div class="cards">
-      <SiPostman size={100} color='#7952B8'/>
-      <h5>POSTMAN</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+      <SiPostman size={50} color='orange'/>
+      <p>POSTMAN</p>
+     
  </div>
+ </div>
+
+ <div class="col-4 col-md-4 col-lg-3">
+     <div class="cards">
+      <SiVite size={50} color='purple'/>
+      <p>VITE</p>
+     
+ </div>
+ </div>
+
+  <div class="col-4 col-md-4 col-lg-3">
+     <div class="cards">
+      <FaNpm size={50} color='red'/>
+      <p>NPM</p>
+     </div>
     </div>
-      <div class="col-6 col-md-4 col-lg-4 ">
+      <div class="col-4 col-md-4 col-lg-3">
  <div class="cards">
-       <SiReact size={100} color='#61DAFB'/>
-      <h5>REACT.JS</h5>
-     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+       <SiReact size={50} color='#61DAFB'/>
+      <p>REACT.JS</p>
+    
 </div>
 </div>
 </div>
    </div>
    </section>
      
-   <div id='about' style={{ color:"white", textAlign:"center" }}>
-            <h1 style={{ color:"aqua", fontSize:"2rem", fontFamily:"cursive" }} >About Me</h1>
-           <p className='container'  style={{ fontSize:"1.2rem",  color: "#cacad6" }}>i'm a frontend developer with a passion for crafting clean, responsive, and accessible web interfaces. i specialize in building seamless user experiences using modern tools like React, Bootstrap and Javascript 
-         With a strong eye for design and details, i bridge the gap between design and code, turning concepts into real,functional products. i enjoy learning new technologies, solving UI challenges, and contributing to projects that make the web better. When i'm not coding, i'm probably exploring design trends, tweaking side projects, or helping others level up in tech.</p>
-         
-   </div>
           <Projects/>
    <div id="container" style={{ textAlign:'center',color:"white" }} className='my-process' >
- <h1 style={{ color:"aqua" }}>My Development Process</h1>
-   <p style={{ color: "#cacad6" }}>A streamlined approach to deliver high-quality results on time and within budgets</p>
+ <h1 style={{ color:"aqua" }} data-aos="fade-up">My Development Process</h1>
+   <p style={{ color: "#cacad6" }} data-aos="fade-up">A streamlined approach to deliver high-quality results on time and within budgets</p>
        <div className="row">
           <div className="col-12 col-md-6 col-lg-6" id='process'>
             <div  id='circle'>
             1
             </div>
-            <h1>Discovery & planning</h1>
-            <p>We discuss your requirements, goals, and create a detailed project plan.</p>
+            <h1 data-aos="fade-up">Discovery & planning</h1>
+            <p data-aos="fade-up">We discuss your requirements, goals, and create a detailed project plan.</p>
           </div>
           <div className="col-12 col-md-6 col-lg-6" id='process'>
            <div  id='circle'>
             2
             </div>
-            <h1>Design & development</h1>
-            <p>I create mockups and develop your projects using modern technologies.</p>
+            <h1 data-aos="fade-up">Design & development</h1>
+            <p data-aos="fade-up">I create mockups and develop your projects using modern technologies.</p>
           </div>
             <div className="col-12 col-md-6 col-lg-6" id='process'>
             <div  id='circle'>
             3
             </div>
-            <h1>Testing & Refinement</h1>
-            <p>Through testing across devices and browsers with refinements based on feedbacks</p>
+            <h1 data-aos="fade-up">Testing & Refinement</h1>
+            <p data-aos="fade-up">Through testing across devices and browsers with refinements based on feedbacks</p>
           </div>
            <div className="col-12 col-md-6 col-lg-6" id='process'>
            <div  id='circle'>
             4
             </div>
-            <h1>Launch & Support</h1>
-            <p>Projects development and ongoing supports ensure everything runs smoothly.</p>
+            <h1 data-aos="fade-up">Launch & Support</h1>
+            <p data-aos="fade-up">Projects development and ongoing supports ensure everything runs smoothly.</p>
           </div>
          </div>
    </div>
    <div id="container" style={{ textAlign:"center"}} className='certificate'>
        <h1 style={{ color:"aqua" }}> Certification</h1>
         <h1 style={{ color:" #cacad6", fontSize:"1.5rem"}}>Web Development Certification</h1>
-      <p style={{ color:" #cacad6" }}><FaCertificate/> New Horizon Computer Center, Ikeja lagos state, Nigeria.</p>
+      <p style={{ color:" #cacad6" }}><FaCertificate/> New Horizon Computer Center, Ikeja lagos state, Nigeria. 2021</p>
     </div>
 <Animation/>
     </div>

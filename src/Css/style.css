@@ -18,7 +18,7 @@ html {
   position: fixed;
   width: 100%;
   top: 0;
-  
+  z-index: 1000; 
 }
 /* Hide the checkbox input */
 #menu-toggle {
@@ -112,13 +112,28 @@ html {
 }
 #body img{
    width: 100%;
+  max-width: 380px;   
   height: auto;
-  object-fit: cover;
   display: block;
-  border-radius: 50px;
+  margin: 0 auto;  
+   border-radius:5px;
    }
 
- 
+ @media (max-width: 576px) {
+  #body img {
+    max-width: 200px;
+  }
+}
+
+#body img {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
 #body img :hover{
     transform:scale(1.1);
     transition: 10s;
@@ -210,6 +225,7 @@ content: '';
  max-width: 100%;
  margin: 0 auto;
  color: white;
+
 }
 .contact h1 {
     color:rgb(145, 123, 4);
@@ -238,6 +254,7 @@ content: '';
     display: flex;
     align-items: center;
     color: white;
+     box-sizing: border-box;
    }
   form .input-box{
     margin-top: 20px;
@@ -254,7 +271,7 @@ content: '';
   form button{
     margin-top: 2vh;
     transition: .5s;
-   
+     margin-bottom: 20px;
   }
   
    form button:hover{
@@ -290,7 +307,7 @@ content: '';
   
   
  
-   .cards h5{
+   .cards p{
   color: white;
    }
    .section-2 .cards :hover{
