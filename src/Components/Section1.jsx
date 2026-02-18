@@ -6,8 +6,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import { Element } from 'react-scroll'
-import { FaWhatsapp, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, FaCertificate,} from "react-icons/fa";
-import { SiHtml5, SiCss3, SiJavascript,SiReact, SiBootstrap } from 'react-icons/si'
+import { FaWhatsapp, FaLinkedin, FaTwitter, FaEnvelope, FaGithub, FaCertificate} from "react-icons/fa";
+import { SiHtml5, SiCss3, SiJavascript,SiReact, SiBootstrap,SiTailwindcss,SiTypescript, SiVite, SiRedox, SiGithub, SiPostman, SiWordpress } from 'react-icons/si'
 import { RiFileGifFill } from 'react-icons/ri'
 import Animation from "../Pages/Animation"
 import Projects from '../Pages/Projects'
@@ -41,7 +41,7 @@ const Section1 = () => {
             <div className='col-12 col-md-6 col-lg-6'>
             <div className='profile' style={{ margin:"65px" }}>
             <h1 >Hi i'm <span style={{ color:"aqua" }}>Chukwujekwu Prosper</span></h1>
-            <p style={{  color: "#cacad6" }}> A Certified  <span className='title'>Front<span>end</span> Web<span>Developer</span> </span>,<br />
+            <p style={{  color: "#cacad6" }}> A Certified  <span className='title'>Front<span>end</span> <span>Developer</span> </span>,<br />
             Passionate about building visually stunning, user-friendly digital experience
              with a knack for turning ideas into responsive, performant websites.
               with expertise in <ol>
@@ -54,8 +54,8 @@ const Section1 = () => {
             I thrives at the intersection of design and functionality-ensuring every pixel serves a purpose.</p>
             </div>
              <div className='button'>
-               <Link to="/Projects" href="#"><button type="button" class="btn btn-light mx-5">View My Work</button></Link>
-                <Link to="/Contact" href="#"><button type="button" class="btn btn-outline-light">Get in touch</button></Link>
+               <Link to="/Projects" href="#" style={{textDecoration:"none"}}><button type="button" class="btn btn-light mx-5">View My Work</button></Link>
+                <Link to="/Contact" href="#" style={{textDecoration:"none"}}><button type="button" class="btn btn-outline-light">Get in touch</button></Link>
              </div>
               <div className='social-media' style={{ padding:"5vh" }}>
           <a href="mailto:prosperplove@gmail.com" style={{ padding:"10px"}}><FaEnvelope size={30}/></a>
@@ -72,62 +72,72 @@ const Section1 = () => {
       <section className='section-2' id='skills'>
         <h1>My Tech <span>Stack</span></h1>
          <div className="container" data-aos="fade-up-right">
-          <div className='row'>
-           <div class="col-6 col-md-4 col-lg-4">
+          <div className='row g-4'>
+           <div class="col-4 col-lg-3">
           <div class="cards">
-              <SiHtml5 size={100} color='#E34F26'/>
-       <h5>HTML</h5>
-       <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"95%" }}>95%</div>
+              <SiHtml5 size={75} color='#E34F26'/>
+       </div>
 </div>
-</div>
-</div>
-  <div class="col-6 col-md-4 col-lg-4">
+  <div class="col-4 col-lg-3">
      <div class="cards">
-       <SiCss3 size={100} color='#1572B6'/>
-       <h5>CSS</h5>
-       <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"75%" }}>75%</div>
-</div>
-
+       <SiCss3 size={75} color='#1572B6'/>
 </div>
 </div>
-  <div class="col-6 col-md-4 col-lg-4">
+  <div class="col-4 col-lg-3">
    <div class="cards">
-       <SiJavascript size={100} color='#F7DF1E'/>
-   <h5>JAVASCRIPT</h5>
-   <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"70%" }}>70%</div>
-</div>
-
+       <SiJavascript size={75} color='#F7DF1E'/>
 </div>
 </div>
-   <div class="col-6 col-md-4 col-lg-4">
+   <div class="col-4 col-lg-3">
      <div class="cards">
-      <SiBootstrap size={100} color='#7952B8'/>
-      <h5>BOOTSTRAP</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+      <SiBootstrap size={75} color='#0d6efc'/>
  </div>
     </div>
-     <div class="col-6 col-md-4 col-lg-4">
+     <div class="col-4 col-lg-3">
      <div class="cards">
-       <RiFileGifFill size={100} color='#61DAFB'/>
-      <h5>GIT</h5>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"85%" }}>85%</div>
-</div>
+      <SiTailwindcss size={75} color='#3178c6'/>
+ </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+      <SiTypescript size={75} color='#7952B8'/>
+ </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+      <SiVite size={75} color='#7952B8'/>
+ </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+      <SiRedox size={75} color='#7952B8'/>
+ </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+      <SiGithub size={75} color='#6cc644'/>
+ </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+      <SiWordpress size={75} color='#6cc644'/>
+ </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+      <SiPostman size={75} color='#ef5b25'/>
+     </div>
+    </div>
+     <div class="col-4 col-lg-3">
+     <div class="cards">
+       <RiFileGifFill size={75} color='#61DAFB'/>
  </div>
     </div>
     
-      <div class="col-6 col-md-4 col-lg-4 ">
+      <div class="col-4 col-lg-3 ">
  <div class="cards">
-       <SiReact size={100} color='#61DAFB'/>
-      <h5>REACT.JS</h5>
-     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar text-bg-warning" style={{ width:"75%" }}>75%</div>
-</div>
+       <SiReact size={75} color='#61DAFB'/>
+
 </div>
 </div>
 </div>

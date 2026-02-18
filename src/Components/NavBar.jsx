@@ -6,7 +6,7 @@ const NavBar = () => {
     <div style={{ paddingTop:'60px' }}>
       <nav className="navbar">
     <div className="logo" style={{ color:"white", fontWeight:"bold",fontSize:"2rem" }}> 
-       <Link to="/?section=body" class="navbar-brand">PORTFOLIO</Link></div>
+       <Link to="/?section=body" class="navbar-brand text-white">PORTFOLIO</Link></div>
        
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="hamburger">

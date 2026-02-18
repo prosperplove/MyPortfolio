@@ -1,7 +1,10 @@
 import React from 'react'
-import site from "../Image/site.jpg"
-import site2 from "../Image/site2.jpg"
-import site3 from "../Image/site3.jpg"
+import site from "../Image/site.png"
+import site2 from "../Image/site2.png"
+import site3 from "../Image/site3.png"
+import devcode from "../Image/devcode.png"
+import sg from "../Image/sg.png"
+
 const Projects = () => {
   return (
     <div>
@@ -19,11 +22,10 @@ const Projects = () => {
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Crypto Testnet Promo Website </h5>
             <p className="card-text" style={{ color: "#cacad6" }}>
-             A Simple Crypto Testnet Promo Website,used CoinGecko Api to fetch live crypto market information. <br />
-             A whitelist form to submit your wallet and email
+             A Simple Crypto Testnet Promo Website,used CoinGecko Api to fetch live crypto market information. 
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
-              <strong>Languages Used:</strong> HTML, CSS, JavaScript, React, Bootstrap
+              <strong>Languages Used:</strong> JavaScript, React
             </p>
             <a href="https://matrixcoin.netlify.app" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
               View Project
@@ -40,9 +42,9 @@ const Projects = () => {
         <div className="card bg-dark text-light  shadow-lg border-0">
           <img src={site} className="card-img-top" alt="Todo App" />
           <div className="card-body">
-            <h5 className="card-title" style={{ color: "aqua" }}>Marketing E-commerce Website</h5>
+            <h5 className="card-title" style={{ color: "aqua" }}>E-commerce Website</h5>
             <p className="card-text" style={{ color: "#cacad6" }}>
-             Clothes & Sneakers E-commerce Website, responsive to all screen sizes,<br />Option to add to cart and a sellout payment page for total items bought 
+             Clothes & Sneakers E-commerce Website
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
               <strong>Languages Used:</strong> HTML, CSS, JavaScript, React
@@ -56,15 +58,59 @@ const Projects = () => {
           </div>
         </div>
       </div>
-
-      {/* Project 3 */}
+        
+          {/* Project 3 */}
+          <div className="col-12 col-md-6 col-lg-4">
+        <div className="card bg-dark text-light  shadow-lg border-0">
+          <img src={devcode} className="card-img-top" alt="Todo App" />
+          <div className="card-body">
+            <h5 className="card-title" style={{ color: "aqua" }}>Buisness Websiness</h5>
+            <p className="card-text" style={{ color: "#cacad6" }}>
+           A tech startup Porfolio website for Devcode Hub, Showcasing the company's portfolio
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
+              <strong>Languages Used:</strong> React,Tailwindcss, Javascript
+            </p>
+            <a href="https://devcode-hub.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
+              View Project
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    
+        {/* Project 4 */}
+       <div className="col-12 col-md-6 col-lg-4">
+        <div className="card bg-dark text-light  shadow-lg border-0">
+          <img src={sg} className="card-img-top" alt="Todo App" />
+          <div className="card-body">
+            <h5 className="card-title" style={{ color: "aqua" }}>Company Website</h5>
+            <p className="card-text" style={{ color: "#cacad6" }}>
+            Company website for Salkeluz Group Of Companies, Shows the company portforlio and contact information
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
+              <strong>Languages Used:</strong> Wordpress
+            </p>
+            <a href="http://salkeluzgroup.com/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info me-2">
+              View Project
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      {/* Project 5 */}
       <div className="col-12 col-md-6 col-lg-4">
         <div className="card bg-dark text-light  shadow-lg border-0">
           <img src={site2} className="card-img-top" alt="Portfolio Website" />
           <div className="card-body">
             <h5 className="card-title" style={{ color: "aqua" }}>Filmmax</h5>
             <p className="card-text" style={{ color: "#cacad6" }}>
-            A little Movie community, where talents connects together, An interactive event registration form, where you receive an instant email regarding your registration.
+            A Movie community, where talents connects together
             </p>
             <p style={{ fontSize: "0.9rem", color: "#8fd6ff" }}>
               <strong>Languages Used:</strong> HTML, CSS, JavaScript, React, Bootstrap

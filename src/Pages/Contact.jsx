@@ -55,19 +55,7 @@ formData.append("access_key", "03a60f55-23e2-413f-8672-4ae8b7849463");
         </p>
       </div>
       <div className="contact2">
-        <div className="row">
-          <div className="col-4 col-md-4 col-lg-4">
-   <a href="https://maps.app.goo.gl/ByBcRcBAzKQ9wwzq5"><FaLocationArrow/> Lagos,Nigeria</a>
-    </div>
-    <div className="col-4 col-md-4 col-lg-4">
-          
-           <a href='https://wa.me/2348144590363'><FaWhatsapp/>whatsapp</a>
-        </div>
-        <div className="col-4 col-md-4 col-lg-4">
-          
-           <a href="tel:+234-813-3467-8092"><FaPhone/>+234-813-3467-8092</a>
-        </div>
-    </div>
+        <a href='https://wa.me/2348144590363'><FaWhatsapp/>whatsapp</a>
          </div>
     <section className="form"> 
     <form action={contactMe} >
@@ -86,7 +74,7 @@ formData.append("access_key", "03a60f55-23e2-413f-8672-4ae8b7849463");
    <label for="message" >Your message</label>
    <textarea  id="message"  name="message" className="form-control" required style={{ height:"150px" }}></textarea>
    </div>
-   <button className="btn bg-primary">Send me message
+   <button className="btn bg-primary text-white">Send me message
      <FaEnvelope color="black"/>
    </button>
 </form>
